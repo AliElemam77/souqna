@@ -1,10 +1,10 @@
 # Souqna - E-Commerce Web Application 🛍️
 
-Souqna is a modern and responsive e-commerce platform built using **React**, **Tailwind CSS**, and **Redux Toolkit**. This project was developed as a task for the company **"Zahab w Awda"**. It demonstrates a full frontend implementation that communicates with a RESTful API to manage products, shopping cart, and product details.
+Souqna is a modern and responsive e-commerce platform built using **React**, **Tailwind CSS**, and **Redux Toolkit**. This project was developed as a task for the company **"Zahab W Awda"**. It demonstrates a full frontend implementation that communicates with a RESTful API to manage products, shopping cart, and product details.
 
 ## 🌐 Live Demo
 
-> https://souqna-ugk8.vercel.app/
+> https://souqna-npv8.vercel.app/
 
 ---
 
