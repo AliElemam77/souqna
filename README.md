@@ -4,10 +4,9 @@ Souqna is a modern and responsive e-commerce platform built using **React**, **T
 
 ## 🌐 Live Demo
 
-> (Add your deployed link here if available)
+> https://souqna-ugk8.vercel.app/
 
 ---
-
 
 ## 🚀 Features
 
@@ -57,8 +56,6 @@ src/
 ├── main.jsx
 └── index.css
 
-
-
 ---
 
 ## 📦 Installation
@@ -75,3 +72,4 @@ npm install
 
 # 4. Start the development server
 npm run dev
+```
