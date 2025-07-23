@@ -1,7 +1,7 @@
 // Products.js
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from "../../redux/slice/ProductsSlice";
+import { getAllProducts } from "../../redux/slice/productssSlice";
 import { useNavigate } from "react-router-dom";
 import Header from "../header";
 import { motion, useAnimation } from "framer-motion";
