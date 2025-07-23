@@ -8,13 +8,6 @@ Souqna is a modern and responsive e-commerce platform built using **React**, **T
 
 ---
 
-## 📸 Screenshots
-
-| Home Page | Product Page | Cart Page |
-|-----------|---------------|-----------|
-| ![Home](./screenshots/home.png) | ![Product](./screenshots/product.png) | ![Cart](./screenshots/cart.png) |
-
----
 
 ## 🚀 Features
 
