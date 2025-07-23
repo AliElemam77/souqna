@@ -8,6 +8,14 @@ Souqna is a modern and responsive e-commerce platform built using **React**, **T
 
 ---
 
+## 📸 Screenshots
+
+| Home Page | Product Page | Cart Page |
+|-----------|---------------|-----------|
+| ![Home](./screenshots/home.png) | ![Product](./screenshots/product.png) | ![Cart](./screenshots/cart.png) |
+
+---
+
 ## 🚀 Features
 
 - 🛒 View and filter products with pagination, sorting, and search
@@ -37,3 +45,40 @@ Souqna is a modern and responsive e-commerce platform built using **React**, **T
 ---
 
 ## 📂 Project Structure
+
+src/
+├── components/
+│ ├── ProductCard.jsx
+│ ├── Navbar.jsx
+│ ├── Footer.jsx
+│ └── Loader.jsx
+├── pages/
+│ ├── Home.jsx
+│ ├── Products.jsx
+│ └── ProductDetails.jsx
+├── redux/
+│ └── slice/
+│ ├── productsSlice.js
+│ └── cartSlice.js
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+
+---
+
+## 📦 Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/AliElemam77/souqna
+
+# 2. Navigate into the project directory
+cd souqna
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
