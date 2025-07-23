@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Search, Filter, SortAsc } from "lucide-react";
 import ProductCard from "../../components/product";
-import { getAllProducts } from "../../redux/slice/ProductsSlice";
+import { getAllProducts } from "../../redux/slice/productssSlice";
 
 export default function Products() {
   const dispatch = useDispatch();
