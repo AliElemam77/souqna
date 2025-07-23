@@ -3,12 +3,14 @@ import { Star } from "lucide-react";
 import { addToCart } from "../../redux/slice/cartSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 export default function ProductCard({ product, loading }) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     dispatch(addToCart(product));
+    toast.success(`${product.nameEn} added to cart!`);
   };
   if (loading) {
     return (
@@ -24,7 +26,7 @@ export default function ProductCard({ product, loading }) {
   return (
     <div
       onClick={() => {
-        navigate(`/products/${product.id}`); 
+        navigate(`/products/${product.id}`);
       }}
       className="group relative block cursor-pointer overflow-hidden w-full max-w-xs h-[550px] rounded-xl shadow hover:shadow-lg transition"
     >

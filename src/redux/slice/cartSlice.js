@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import toast from "react-hot-toast";
 
 // لو فيه داتا في localStorage هتتحمل
 const initialCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -25,6 +26,7 @@ const cartSlice = createSlice({
     },
 
     removeFromCart: (state, action) => {
+      toast.error("Item removed from cart");
       const id = action.payload;
       state.cartItems = state.cartItems.filter((item) => item.id !== id);
 

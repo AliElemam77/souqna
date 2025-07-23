@@ -3,36 +3,34 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Timeline() {
-const steps = [
-  {
-    date: "01/01/2025",
-    title: "Project Kickoff",
-    desc: "Started planning Souqna, defined core features like product listings, cart, and checkout flow.",
-  },
-  {
-    date: "15/01/2025",
-    title: "Authentication Module",
-    desc: "Implemented user registration, login with JWT, and secure authentication flow.",
-  },
-  {
-    date: "01/02/2025",
-    title: "Product Management",
-    desc: "Integrated product API and built dynamic UI for listing, filtering, and searching products.",
-  },
-  {
-    date: "15/02/2025",
-    title: "Shopping Cart & Checkout",
-    desc: "Developed add-to-cart logic with Redux, price calculation, and persistent storage using localStorage.",
-  },
-  {
-    date: "01/03/2025",
-    title: "Launch & Feedback",
-    desc: "Deployed MVP, gathered user feedback, and planned performance and UX improvements.",
-  },
-];
+  const steps = [
+    {
+      date: "01/01/2025",
+      title: "Project Kickoff",
+      desc: "Started planning Souqna, defined core features like product listings, cart, and checkout flow.",
+    },
+    {
+      date: "15/01/2025",
+      title: "Authentication Module",
+      desc: "Implemented user registration, login with JWT, and secure authentication flow.",
+    },
+    {
+      date: "01/02/2025",
+      title: "Product Management",
+      desc: "Integrated product API and built dynamic UI for listing, filtering, and searching products.",
+    },
+    {
+      date: "15/02/2025",
+      title: "Shopping Cart & Checkout",
+      desc: "Developed add-to-cart logic with Redux, price calculation, and persistent storage using localStorage.",
+    },
+    {
+      date: "01/03/2025",
+      title: "Launch & Feedback",
+      desc: "Deployed MVP, gathered user feedback, and planned performance and UX improvements.",
+    },
+  ];
 
-
-  // Helper to assign different colors
   const getDotColor = (index) => {
     const colors = ["bg-orange-500", "bg-yellow-400", "bg-blue-600"];
     return colors[index % colors.length];
@@ -56,7 +54,6 @@ const steps = [
             className="group relative grid grid-cols-2 odd:-me-3 even:-ms-3"
           >
             <div className="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
-              {/* Dot */}
               <span
                 className={`z-10 mt-1.5 size-4 shrink-0 rounded-full ${getDotColor(
                   i
@@ -64,7 +61,7 @@ const steps = [
               ></span>
 
               <div className="-mt-1.5">
-                <time className="text-sm font-semibold text-blue-600">
+                <time className="text-sm font-semibold text-yellow-600">
                   {step.date}
                 </time>
                 <h3 className="text-xl font-bold text-gray-900">

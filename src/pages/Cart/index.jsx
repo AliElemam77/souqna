@@ -11,8 +11,8 @@ export default function Cart() {
   const { cartItems, totalPrice } = useSelector((state) => state.cart);
 
   return (
-    <section className="bg-gray-50 min-h-screen py-12">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-50 min-h-screen py-12 px-4">
+      <div className="mx-auto max-w-screen-xl">
         <div className="mx-auto max-w-4xl">
           <Header title="🛒 Your Shopping Cart" />
 
@@ -26,14 +26,14 @@ export default function Cart() {
                 {cartItems.map((item) => (
                   <li
                     key={item.id}
-                    className="flex flex-col sm:flex-row items-center gap-6 bg-white shadow-sm rounded-xl p-4 border"
+                    className="flex flex-wrap items-center gap-4 sm:gap-6 bg-white shadow-sm rounded-xl p-4 border"
                   >
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-24 h-24 object-cover rounded"
                     />
-                    <div className="flex-1 w-full">
+                    <div className="flex-1 min-w-[200px]">
                       <h3 className="text-md font-semibold text-gray-800">
                         {item.title}
                       </h3>
@@ -41,7 +41,7 @@ export default function Cart() {
                         ${item.price.toFixed(2)}
                       </p>
 
-                      <div className="mt-4 flex items-center gap-3">
+                      <div className="mt-4 flex items-center gap-2 sm:gap-3">
                         <button
                           onClick={() => dispatch(decreaseQuantity(item.id))}
                           className="w-8 h-8 rounded border hover:bg-gray-100 text-lg font-semibold"
@@ -64,7 +64,7 @@ export default function Cart() {
                     </div>
                     <button
                       onClick={() => dispatch(removeFromCart(item.id))}
-                      className="text-red-500 hover:text-red-700 transition"
+                      className="text-red-500 hover:text-red-700 transition ml-auto"
                       title="Remove"
                     >
                       <svg
@@ -87,14 +87,14 @@ export default function Cart() {
               </ul>
 
               <div className="mt-10 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-6">
-                <p className="text-lg font-medium">
+                <p className="text-lg font-medium text-center sm:text-left">
                   Total:{" "}
                   <span className="text-green-600 font-bold">
                     ${totalPrice.toFixed(2)}
                   </span>
                 </p>
 
-                <button className="rounded bg-yellow-800 px-6 py-3 text-white hover:bg-gray-700 transition">
+                <button className="w-full sm:w-auto rounded bg-yellow-800 px-6 py-3 text-white hover:bg-gray-700 transition">
                   Proceed to Checkout
                 </button>
               </div>
